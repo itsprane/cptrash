@@ -1,6 +1,6 @@
 {
   "name": "cptrash",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CLI tool to recursively delete cPanel File Manager trash contents",
   "main": "index.js",
   "bin": {
@@ -49,6 +49,7 @@
     "figlet": "^1.9.4",
     "inquirer": "^13.0.1",
     "ora": "^9.0.0",
+    "puppeteer-core": "^23.0.0",
     "puppeteer-extra": "^3.3.6",
     "puppeteer-extra-plugin-stealth": "^2.11.2"
   },
