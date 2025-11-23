@@ -1,0 +1,33 @@
+# Development files
+debug/
+*.log
+.DS_Store
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment
+.env
+.env.local
+
+# Test files (if any)
+test/
+tests/
+*.test.js
+*.spec.js
+
+# Documentation (optional - keep README.md)
+# docs/
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+.travis.yml

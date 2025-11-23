@@ -1,0 +1,71 @@
+{
+  "name": "cptrash",
+  "version": "1.0.0",
+  "description": "CLI tool to recursively delete cPanel File Manager trash contents",
+  "main": "index.js",
+  "bin": {
+    "cptrash": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write \"**/*.{js,json,md}\"",
+    "format:check": "prettier --check \"**/*.{js,json,md}\"",
+    "prepare": "husky"
+  },
+  "keywords": [
+    "cpanel",
+    "trash",
+    "cleanup",
+    "file-manager",
+    "puppeteer",
+    "automation",
+    "cli"
+  ],
+  "author": "Pranesh P <pranesh.vimal5@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itsprane/cptrash.git"
+  },
+  "homepage": "https://github.com/itsprane/cptrash#readme",
+  "bugs": {
+    "url": "https://github.com/itsprane/cptrash/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "dependencies": {
+    "boxen": "^8.0.1",
+    "chalk": "^5.6.2",
+    "commander": "^13.1.0",
+    "figlet": "^1.9.4",
+    "inquirer": "^13.0.1",
+    "ora": "^9.0.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.2.5"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md}": [
+      "prettier --write"
+    ]
+  }
+}
